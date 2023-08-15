@@ -1,68 +1,31 @@
-/* * {
-  margin: 0;
+*{
   padding: 0;
-} */
-.load {
-  animation: slide 2s;
+  margin: 0;
+  box-sizing: border-box;
 }
-.slider {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  width: 100%;
-  height: 100vh;
-  animation: slide 20s infinite;
+body{
+      background-color: #f9f6f2;
 }
-.contentImage {
-  color: #fff;
-  width: 100%;
-  height: 100vh;
-  background-color: rgba(0, 0, 0, 0.5);
+.card-img-top{
+  border-radius: 50px;
+  padding: 20px;
 }
-.principal {
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  position: absolute;
-  letter-spacing: 5px;
-  text-align: center;
+.card{
+  border-radius: 30px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
 }
-.principal h1 {
-  font-size: 70px;
-  margin-bottom: 20px;
+.card-body{
+  padding: 25px;
+  margin-top: -15px;
 }
-.principal p {
-  font-size: 20px;
+.btn-primary{
+  border-radius: 50px;
+  width: 120px;
 }
-@keyframes slide {
-  0% {
-    background-image: url("tes/gambar1.jpg");
-  }
-  20% {
-    background-image: url("tes/gambar1.jpg");
-  }
-  20.1% {
-    background-image: url("tes/gambar2.jpg");
-  }
-  40% {
-    background-image: url("tes/gambar2.jpg");
-  }
-  40.1% {
-    background-image: url("tes/gambar3.jpg");
-  }
-  60% {
-    background-image: url("tes/gambar3.jpg");
-  }
-  60.1% {
-    background-image: url("tes/gambar1.jpg");
-  }
-  80% {
-    background-image: url("tes/gambar1.jpg");
-  }
-  80.1% {
-    background-image: url("tes/gambar2.jpg");
-  }
-  100% {
-    background-image: url("tes/gambar2.jpg");
-  }
+.btn-primary:hover{
+  background-color: black;
+  border: none;
+}
+h3,h5{
+  color: rgb(0, 91, 228);
 }
