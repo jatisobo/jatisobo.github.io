@@ -1,62 +1,84 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
-    <link href="tesStyle.css" rel="stylesheet" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
   </head>
-
   <body>
-    <div class="container py-5">
-      <h1 class="text-center">Popular Dishes</h1>
-      <div class="row row-cols-1 row-cols-md-3 g-4 py-5">
-        <div class="col">
-          <div class="card">
-            <img src="img/masjid.jpg" class="card-img-top" alt="..." />
-            <div class="card-body">
-              <h5 class="card-title">TIRAMISU CAKE</h5>
-              <p class="card-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Laboriosam dignissimos accusantium amet similique velit iste.
-              </p>
-            </div>
-            <div class="mb-5 d-flex justify-content-around">
-              <h3>190$</h3>
-              <button class="btn btn-primary">Buy Now</button>
-            </div>
-          </div>
-        </div>
-
-        <div class="col">
-          <div class="card">
-            <img src="img/masjid.jpg" class="card-img-top" alt="..." />
-            <div class="card-body">
-              <h5 class="card-title">TIRAMISU CAKE</h5>
-              <p class="card-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Laboriosam dignissimos accusantium amet similique velit iste.
-              </p>
-            </div>
-            <div class="mb-5 d-flex justify-content-around">
-              <h3>190$</h3>
-              <button class="btn btn-primary">Buy Now</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
+    <table class="table table-striped table-hover">
+      <thead>
+        <tr>
+          <th scope="col">No</th>
+          <th scope="col">Nama</th>
+          <th scope="col">Pendidikan</th>
+          <th scope="col">Jabatan</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>Bpk. Darmanto</td>
+          <td>SLTA</td>
+          <td>Kades</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Bpk. Suhardi</td>
+          <td>SLTA</td>
+          <td>Sekdes</td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td>Bpk. Aris Bambang S.</td>
+          <td>S1</td>
+          <td>Kadus 1</td>
+        </tr>
+        <tr>
+          <th scope="row">4</th>
+          <td>Bpk. Joko Asri Y.</td>
+          <td>SLTA</td>
+          <td>Kadus 2</td>
+        </tr>
+        <tr>
+          <th scope="row">5</th>
+          <td>Bpk. Adi Sarmoko</td>
+          <td>D3</td>
+          <td>Kadus 3</td>
+        </tr>
+        <tr>
+          <th scope="row">6</th>
+          <td>Bpk. Aji Prasetyo N.</td>
+          <td>S1</td>
+          <td>Kasi Pemerintahan</td>
+        </tr>
+        <tr>
+          <th scope="row">7</th>
+          <td>Bpk. Muh.Miftakhuddin</td>
+          <td>SLTA</td>
+          <td>Kasi Kesra dan Pelayanan</td>
+        </tr>
+        <tr>
+          <th scope="row">8</th>
+          <td>Bpk. Budi Santoso</td>
+          <td>SLTA</td>
+          <td>Kaur Perencanaan</td>
+        </tr>
+        <tr>
+          <th scope="row">9</th>
+          <td>Ibu. Harmini</td>
+          <td>SLTA</td>
+          <td>Kaur Umum</td>
+        </tr>
+        <tr>
+          <th scope="row">10</th>
+          <td>Bpk. Bayu Sapto Aji</td>
+          <td>SLTA</td>
+          <td>Kaur Keuangan</td>
+        </tr>
+      </tbody>
+    </table>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
   </body>
 </html>
