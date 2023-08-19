@@ -51,7 +51,16 @@ body {
 /* END CSS Navbar */
 
 /* Start CSS Image Landing Page */
-.slider {
+.c-item{
+	height: 60vh;
+}
+
+.c-img{
+	height: 100%;
+	object-fit: cover;
+	filter: brightness(0.6);
+}
+/* .slider {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -108,8 +117,8 @@ body {
   }
   100% {
     background-image: url("tes/gambar2.jpg");
-  }
-}
+  } */
+/* } */
 
 /* END CSS Image Landing Page */
 
