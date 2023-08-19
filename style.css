@@ -1,8 +1,4 @@
 /* START CSS Navbar */
-body {
-  padding-top: 84px;
-}
-
 .navbar {
   background-color: #faf8f1;
 }
@@ -51,14 +47,14 @@ body {
 /* END CSS Navbar */
 
 /* Start CSS Image Landing Page */
-.c-item{
-	height: 60vh;
+.c-item {
+  height: 100vh;
 }
 
-.c-img{
-	height: 100%;
-	object-fit: cover;
-	filter: brightness(0.6);
+.c-img {
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.6);
 }
 /* .slider {
   background-repeat: no-repeat;
@@ -123,17 +119,35 @@ body {
 /* END CSS Image Landing Page */
 
 /* START CSS Content */
+.single-content {
+  padding-top: 50px;
+  padding-bottom: 115px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+/* Set the iframe to maintain its aspect ratio */
+.map-responsive {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  padding-top: 50%;
+}
 
+/* Style the iframe to cover the container */
+.map-responsive iframe {
+  border: 0;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
 /* END CSS Content*/
 
 /* START CSS Footer */
 footer {
   background: #c58940;
   padding: 80px 0;
-}
-.single-content {
-  text-align: center;
-  padding: 115px 0;
 }
 .single-box p {
   color: #fff;
