@@ -56,66 +56,6 @@
   object-fit: cover;
   filter: brightness(0.6);
 }
-/* .slider {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
-  animation: slide 20s infinite;
-}
-.contentImage {
-  color: #fff;
-  height: 100vh;
-  background-color: rgba(0, 0, 0, 0.5);
-}
-.principal {
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  position: absolute;
-  letter-spacing: 5px;
-  text-align: center;
-}
-.principal h1 {
-  font-size: 70px;
-  margin-bottom: 20px;
-}
-.principal p {
-  font-size: 20px;
-}
-@keyframes slide {
-  0% {
-    background-image: url("img/masjid.jpg");
-  }
-  20% {
-    background-image: url("img/masjid.jpg");
-  }
-  20.1% {
-    background-image: url("tes/gambar2.jpg");
-  }
-  40% {
-    background-image: url("tes/gambar2.jpg");
-  }
-  40.1% {
-    background-image: url("tes/gambar3.jpg");
-  }
-  60% {
-    background-image: url("tes/gambar3.jpg");
-  }
-  60.1% {
-    background-image: url("img/masjid.jpg");
-  }
-  80% {
-    background-image: url("img/masjid.jpg");
-  }
-  80.1% {
-    background-image: url("tes/gambar2.jpg");
-  }
-  100% {
-    background-image: url("tes/gambar2.jpg");
-  } */
-/* } */
-
 /* END CSS Image Landing Page */
 
 /* START CSS Content */
@@ -141,6 +81,38 @@
   position: absolute;
   top: 0;
   width: 100%;
+}
+
+.card-img-top{
+  padding: 20px;
+}
+.card{
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+}
+.card-body{
+  padding: 25px;
+  margin-top: -15px;
+}
+.btn-custom{
+  color: #faf8f1 !important;
+  background-color: #c58940 !important;
+  width: 120px;
+}
+
+.btn-custom a{
+  color: #faf8f1 !important;
+  text-decoration: none;
+}
+.btn-custom:hover{
+  background-color: black !important;
+  border: none;
+}
+
+.nums .num {
+  flex: 1;
+  text-align: center;
+  font-size: 40px;
+  padding: 20px;
 }
 /* END CSS Content*/
 

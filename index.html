@@ -230,7 +230,7 @@
                 </div>
               </div>
               <div class="col-md-6">
-                <p style="text-align: left" class="mt-3 pt-xl-5">
+                <p style="text-align: justify" class="mt-3 pt-xl-5">
                   Kata Jatisobo, merupakan nama yang berasal dari berbagai
                   narasi dan cerita-cerita legenda atau sejarah yang diceritakan
                   secara turun-temurun, baik tertulis maupun verbal. Salah satu
@@ -247,7 +247,53 @@
       </div>
       <div class="container rounded-4 mb-3" style="background-color: white">
         <div class="single-content">
-          <h1 style="text-align: center">Dusun</h1>
+          <h1 style="text-align: center" class="dusun">Informasi Dusun</h1>
+          <div class="container py-5">
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+              <div class="col">
+                <div class="card rounded-5">
+                  <img
+                    src="img/Dusun/Dusun 1-logos_black.png"
+                    class="card-img-top rounded-5"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title" style="text-align: center">
+                      Membawahi 2 RW dan 6 RT
+                    </h5>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card rounded-5">
+                  <img
+                    src="img/Dusun/Dusun 2-logos_transparent.png"
+                    class="card-img-top rounded-5"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title" style="text-align: center">
+                      Membawahi 3 RW dan 8 RT
+                    </h5>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card rounded-5">
+                  <img
+                    src="img/Dusun/Dusun 3-logos_transparent.png"
+                    class="card-img-top rounded-5"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title" style="text-align: center">
+                      Membawahi 2 RW dan 5 RT
+                    </h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <div class="container rounded-4 mb-3" style="background-color: white">
@@ -257,6 +303,61 @@
             Data singkat terkait jumlah penduduk, jumlah keluarga, serta jumlah
             perangkat desa
           </h6>
+          <div class="nums">
+            <div class="container py-5">
+              <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                  <div class="card rounded-5">
+                    <h3 style="text-align: center" class="mt-2">
+                      Jumlah Penduduk
+                    </h3>
+                    <div class="card-body">
+                      <h5
+                        class="card-title num"
+                        style="text-align: center"
+                        data-goal="5399"
+                      >
+                        0
+                      </h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card rounded-5">
+                    <h3 style="text-align: center" class="mt-2">
+                      Jumlah Keluarga
+                    </h3>
+                    <div class="card-body">
+                      <h5
+                        class="card-title num"
+                        style="text-align: center"
+                        data-goal="1677"
+                      >
+                        0
+                      </h5>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col">
+                  <div class="card rounded-5">
+                    <h3 style="text-align: center" class="mt-2">
+                      Jumlah Perangkat Desa
+                    </h3>
+                    <div class="card-body">
+                      <h5
+                        class="card-title num"
+                        style="text-align: center"
+                        data-goal="10"
+                      >
+                        0
+                      </h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -369,6 +470,29 @@
           navbar.classList.add("navbar-solid");
         }
       });
+
+      let nums = document.querySelectorAll(".nums .num");
+      let section = document.querySelector(".dusun");
+      let started = false; // Function Started ? No
+
+      window.onscroll = function () {
+        if (window.scrollY >= section.offsetTop) {
+          if (!started) {
+            nums.forEach((num) => startCount(num));
+          }
+          started = true;
+        }
+      };
+
+      function startCount(el) {
+        let goal = el.dataset.goal;
+        let count = setInterval(() => {
+          el.textContent++;
+          if (el.textContent == goal) {
+            clearInterval(count);
+          }
+        }, 10 / goal);
+      }
     </script>
     <!-- End of JavaScript -->
   </body>
