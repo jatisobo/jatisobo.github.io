@@ -48,60 +48,36 @@
   
   /* START CSS Content */
   .single-content {
-    margin-top: 90px;
+    margin-top: 115px;
     padding-top: 50px;
-    padding-bottom: 115px;
+    padding-bottom: 50px;
     padding-left: 20px;
     padding-right: 20px;
   }
-  /* Set the iframe to maintain its aspect ratio */
-  .map-responsive {
-    overflow: hidden;
-    position: relative;
-    width: 100%;
-    padding-top: 50%;
-  }
   
-  /* Style the iframe to cover the container */
-  .map-responsive iframe {
-    border: 0;
-    height: 100%;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 100%;
-  }
-  
-  .card-img-top{
+  .card-img-top {
     padding: 20px;
   }
-  .card{
+  .card {
     box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
   }
-  .card-body{
+  .card-body {
     padding: 25px;
     margin-top: -15px;
   }
-  .btn-custom{
+  .btn-custom {
     color: #faf8f1 !important;
     background-color: #c58940 !important;
     width: 120px;
   }
   
-  .btn-custom a{
+  .btn-custom a {
     color: #faf8f1 !important;
     text-decoration: none;
   }
-  .btn-custom:hover{
+  .btn-custom:hover {
     background-color: black !important;
     border: none;
-  }
-  
-  .nums .num {
-    flex: 1;
-    text-align: center;
-    font-size: 40px;
-    padding: 20px;
   }
   /* END CSS Content*/
   

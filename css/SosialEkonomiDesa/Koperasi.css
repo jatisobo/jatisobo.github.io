@@ -1,9 +1,5 @@
 /* START CSS Navbar */
-body {
-    padding-top: 105px;
-  }
-  
-  .navbar {
+.navbar {
     background-color: #faf8f1;
   }
   
@@ -51,35 +47,38 @@ body {
   /* END CSS Navbar */
   
   /* START CSS Content */
-  .single-content1 {
+  .single-content {
+    margin-top: 115px;
     padding-top: 50px;
-    padding-bottom: 115px;
+    padding-bottom: 50px;
     padding-left: 20px;
     padding-right: 20px;
   }
-  .single-content2 {
-    padding-top: 50px;
-    padding-bottom: 115px;
-    padding-left: 20px;
-    padding-right: 20px;
+  
+  .card-img-top {
+    padding: 20px;
   }
-  img{
-	max-width: 100%;
-}
-.gallery{
-	background-color: #faeab1;
-	padding: 30px 0;
-}
-.gallery img{
-	background-color: #ffffff;
-	padding: 15px;
-	width: 100%;
-	box-shadow: 0 0 15px rgba(0,0,0,0.7);
-	cursor: pointer;
-}
-#gallery-modal .modal-img{
-	width: 100%;
-}
+  .card {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+  }
+  .card-body {
+    padding: 25px;
+    margin-top: -15px;
+  }
+  .btn-custom {
+    color: #faf8f1 !important;
+    background-color: #c58940 !important;
+    width: 120px;
+  }
+  
+  .btn-custom a {
+    color: #faf8f1 !important;
+    text-decoration: none;
+  }
+  .btn-custom:hover {
+    background-color: black !important;
+    border: none;
+  }
   /* END CSS Content*/
   
   /* START CSS Footer */
