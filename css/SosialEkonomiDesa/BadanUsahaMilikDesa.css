@@ -1,0 +1,144 @@
+/* START CSS Navbar */
+.navbar {
+  background-color: #faf8f1;
+}
+
+.navbar-nav {
+  flex-direction: row;
+  justify-content: center;
+}
+
+.nav-item {
+  margin-right: 20px;
+}
+
+.nav-link {
+  color: #101010 !important;
+}
+
+.nav-link:hover {
+  color: whitesmoke !important; /* Mengubah warna teks tautan saat dihover */
+  background-color: #c58940;
+}
+
+.nav-link.active {
+  color: gray !important; /* Change the color to your desired value */
+}
+
+.nav-link.active:hover {
+  color: whitesmoke !important; /* Change the color to your desired value */
+}
+
+@media (min-width: 768px) {
+  .dropdown:hover > .dropdown-menu {
+    display: block;
+    margin-top: 0;
+  }
+}
+
+.navbar-transparent {
+  background-color: rgba(250, 248, 241, 0.9);
+  transition: background-color 0.3s ease-in-out;
+}
+
+.navbar-solid {
+  transition: background-color 0.3s ease-in-out;
+}
+/* END CSS Navbar */
+
+/* START CSS Content */
+.single-content {
+  margin-top: 115px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.card-img-top {
+  padding: 20px;
+}
+.card {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+}
+.card-body {
+  padding: 25px;
+  margin-top: -15px;
+}
+.btn-custom {
+  color: #faf8f1 !important;
+  background-color: #c58940 !important;
+  width: 120px;
+}
+
+.btn-custom a {
+  color: #faf8f1 !important;
+  text-decoration: none;
+}
+.btn-custom:hover {
+  background-color: black !important;
+  border: none;
+}
+/* END CSS Content*/
+
+/* START CSS Footer */
+footer {
+  background: #c58940;
+  padding: 80px 0;
+}
+.single-box p {
+  color: #fff;
+  line-height: 1.9;
+}
+.single-box h3 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+}
+.single-box .card-area i {
+  color: #ffffff;
+  font-size: 20px;
+  margin-right: 10px;
+}
+.single-box ul {
+  list-style: none;
+  padding: 0;
+}
+.single-box ul li a {
+  text-decoration: none;
+  color: #fff;
+  line-height: 2.5;
+  font-weight: 100;
+}
+.single-box ul li a:hover {
+  text-decoration: underline;
+  color: #faf8f1;
+}
+.single-box h2 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+}
+#basic-addon2 {
+  background: #fe1e4f;
+  color: #fff;
+}
+.socials i {
+  font-size: 18px;
+  color: #fff;
+}
+
+.socials span {
+  margin-right: 15px;
+}
+@media (max-width: 767px) {
+  .single-box {
+    margin-bottom: 50px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .single-box {
+    margin-bottom: 50px;
+  }
+}
+/* END CSS Footer */
