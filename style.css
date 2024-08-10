@@ -83,27 +83,27 @@
   width: 100%;
 }
 
-.card-img-top{
+.card-img-top {
   padding: 20px;
 }
-.card{
+.card {
   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
 }
-.card-body{
+.card-body {
   padding: 25px;
   margin-top: -15px;
 }
-.btn-custom{
+.btn-custom {
   color: #faf8f1 !important;
   background-color: #c58940 !important;
   width: 120px;
 }
 
-.btn-custom a{
+.btn-custom a {
   color: #faf8f1 !important;
   text-decoration: none;
 }
-.btn-custom:hover{
+.btn-custom:hover {
   background-color: black !important;
   border: none;
 }
@@ -177,3 +177,10 @@ footer {
   }
 }
 /* END CSS Footer */
+
+/* START Copyright */
+
+.copyright-footer {
+  font-family: "Poppins", sans-serif;
+  margin-bottom: "";
+}
