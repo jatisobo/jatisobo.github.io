@@ -1,6 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PY2KNJYKD6"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-PY2KNJYKD6");
+    </script>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- update letak -->
@@ -32,7 +43,7 @@
           <ul class="navbar-nav me-auto ms-5 mb-2 mb-lg-0">
             <li class="nav-item">
               <!-- update letak -->
-              <a class="nav-link active rounded-3" aria-current="page" style="text-align: center" href="index.html">Halaman Utama</a>
+              <a class="nav-link active rounded-3" aria-current="page" style="text-align: center" href="index.html">Beranda</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle rounded-3" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="text-align: center">Profil Desa</a>
@@ -161,37 +172,40 @@
                 <div class="map-responsive">
                   <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15818.303848220774!2d110.89376829144312!3d-7.6210313778017325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a22b4bc6786fd%3A0x5027a76e356bb10!2sJatisobo%2C%20Kec.%20Polokarto%2C%20Kabupaten%20Sukoharjo%2C%20Jawa%20Tengah!5e0!3m2!1sid!2sid!4v1692424417936!5m2!1sid!2sid"
-                    frameborder="0"
                     style="border: 0"
-                    allowfullscreen=""
+                    title="Mapping Desa Jatisobo"
                     loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
                   ></iframe>
                 </div>
               </div>
               <div class="col-md-6">
-                <p style="text-align: justify" class="mt-2">
-                  Desa Jatisobo merupakan salah satu desa dari 150 desa di Sukoharjo yang terletak di atas lahan seluas 221 Ha dengan sebagian besar area merupakan persawahan. Kata "Jatisobo" merupakan nama yang berasal dari berbagai narasi
-                  dan cerita-cerita legenda atau sejarah yang diceritakan secara turun-temurun, baik tertulis maupun verbal. Salah satu sumber menceritakan bahwa kata "Jatisobo" berawal dari kisah adanya Pohon Jati yang begitu besar
-                  ukurannya sehingga bayang-bayang pohon ketika terkena sinar matahari bisa menjangkau lokasi yang sangat jauh (karena sangat besar dan tingginya pohon) bahkan sampai ke wilayah keraton Surakarta.
-                </p>
+                <div class="">
+                  <p style="text-align: justify" class="mt-2">
+                    Desa Jatisobo merupakan salah satu desa dari 150 desa di Sukoharjo yang terletak di atas lahan seluas 221 Ha dengan sebagian besar area merupakan persawahan. Kata "Jatisobo" merupakan nama yang berasal dari berbagai
+                    narasi dan cerita-cerita legenda atau sejarah yang diceritakan secara turun-temurun, baik tertulis maupun verbal. Salah satu sumber menceritakan bahwa kata "Jatisobo" berawal dari kisah adanya Pohon Jati yang begitu
+                    besar ukurannya sehingga bayang-bayang pohon ketika terkena sinar matahari bisa menjangkau lokasi yang sangat jauh (karena sangat besar dan tingginya pohon) bahkan sampai ke wilayah keraton Surakarta.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="container rounded-4 mb-3" style="background-color: white">
+      <!-- <div class="container rounded-4 mb-3" style="background-color: white">
         <div class="single-content">
           <div class="container">
             <div class="container mt-5">
-              <div class="col d-flex justify-content-center">
+              <div class="col d-flex justify-content-center video-container">
                 <iframe
                   class="mt-4"
-                  width="90%"
+                  width="80%"
                   height="500"
+                  loading="lazy"
                   src="https://www.youtube.com/embed/WQvUW4QdWqA?si=6nP_Ush8_xrZi5Fg"
-                  title="YouTube video player"
-                  frameborder="0"
+                  title="Profile Desa jatisobo"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                   referrerpolicy="strict-origin-when-cross-origin"
                   allowfullscreen
@@ -202,7 +216,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
       <div class="container rounded-4 mb-3" style="background-color: white">
         <div class="single-content">
           <h1 style="text-align: center" class="dusun p-2 m mb-5 w-100">Informasi Dusun</h1>
@@ -397,6 +411,14 @@
             clearInterval(count);
           }
         }, 10 / goal);
+      }
+
+      function openTab(videoId) {
+        var videos = document.getElementsByClassName("tab-content");
+        for (var i = 0; i < videos.length; i++) {
+          videos[i].style.display = "none";
+        }
+        document.getElementById(videoId).style.display = "block";
       }
     </script>
     <!-- End of JavaScript -->

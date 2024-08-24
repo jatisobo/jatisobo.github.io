@@ -58,6 +58,19 @@
 }
 /* END CSS Image Landing Page */
 
+/* START CSS IFRAME VIDEO */
+
+.video-container {
+  border-radius: 8px;
+}
+
+.video-container iframe {
+  border-radius: 8px;
+  border: none;
+}
+
+/* END CSS IFRAME VIDEO */
+
 /* START CSS Content */
 .single-content {
   padding-top: 50px;
@@ -71,11 +84,13 @@
   position: relative;
   width: 100%;
   padding-top: 50%;
+  border-radius: 8px;
 }
 
 /* Style the iframe to cover the container */
 .map-responsive iframe {
-  border: 0;
+  border-radius: 8px;
+  border: none;
   height: 100%;
   left: 0;
   position: absolute;
